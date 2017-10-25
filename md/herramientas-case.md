@@ -82,6 +82,7 @@ Forma 2:
 - Outline: esquema de la clase en edición. Métodos y atributos.
 - Consola Java: resultado de la ejecución de los programas, salida por consola, errores ejecución
 
+
 #### Window y Perspectivas
 - La ventana principal es un mosaico de ventanitas o  **views**.
 - La visualización de la ventana principal se puede cambiar desde el menú window.
