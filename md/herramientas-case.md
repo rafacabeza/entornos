@@ -62,6 +62,7 @@ el estado del programa.
 - Seleccionar el Workspace: almacenes de proyectos de eclipse
 - Nota: las versiones posteriores vienen con instalador típico
 
+
 #### Importación de un proyecto
 
 Forma 1:
@@ -90,8 +91,53 @@ Forma 2:
     - Existen perspectivas predefinidas.
 
 
-## Configuración y actualización
+
+### Instalación de plugins 
+- Plugin: programa o aplicación que añade funcionalidades específicas a otro programa, en forma de complementos o extensiones. 
+- Muy habituales en navegadores, reproductores de música y herramientas de desarrollo.
+- No son parches ni actualizaciones.
+
+
+#### Creación de nuevo proyecto con GUI
+- File / New / Java Project
+- Escribir nombre de proyecto
+- Finish
+- Sobre el proyecto, botón derecho New / Other / WindowBuilder / Swing Designer / Application Window
+- Escribir nombre de la ventana
+- Finish
+
+
+#### Creación de nuevo proyecto con GUI
+- La nueva clase con el nombre de la ventana se puede editar en modo fuente (source) o en modo diseño (design).
+- En el modo diseño se distinguen bloques:
+    - Structure: Componentes agregados jerárquicamente.
+    - Properties: Propiedades del elemento seleccionado.
+    - Palette: Elementos que se pueden añadir a la ventana.
+    - Ventana o formulario: Donde se van añadiendo los elementos.
+
+    
+#### Creación de nuevo proyecto con GUI
+- Para añadir componentes a la ventana primero hay que añadir un contenedor donde añadir elementos: Layouts.- 
+- Cambia las propiedades: 
+    - Nombre del control: Variable
+    - Cambiar el aspecto: background, font, foreground, text, horizontalAlignment, verticalAlignment, etc.
+    - Añadir funciones a los botones: doble click sobre el botón de la ventana y se visualiza actionPerformed. Las acciones se añadirán en este módulo.
+    - Utiliza Absolute Layout para introducir los controles.
+    - Utiliza JLabel, JTextField, JButton y JPanel (caja que encierra a los controles) para crear la ventana de la siguiente página.
+
+
+#### Creación de nuevo proyecto con GUI
+![imagen](img/ed1a.png "")
 
 
 
+#### Creación de nuevo proyecto con GUI
+- Añadimos ahora acción al botón de limpiar datos:
+- Hacemos doble click sobre el botón y se visualiza el código actionPerformed.
+- Para visualizar un mensaje cuando se pulsa el botón, por ejemplo, habrá que escribir el código en ese método. 
+- Probamos lo siguiente:
+
+
+#### Creación de nuevo proyecto con GUI
+![imagen](img/ed1a.png "")
 
