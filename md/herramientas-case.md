@@ -128,7 +128,7 @@ Forma 2:
 
 
 #### Creación de nuevo proyecto con GUI
-![imagen](img/ed1b.png "")
+![imagen](img/ed1a.png "")
 
 
 #### Creación de nuevo proyecto con GUI
@@ -139,5 +139,5 @@ Forma 2:
 
 
 #### Creación de nuevo proyecto con GUI
-![imagen](img/ed1a.png "")
+![imagen](img/ed1b.png "")
 
