@@ -52,6 +52,43 @@ el estado del programa.
 ## Instalación de un entorno de desarrollo 
 
 
+### Instalación de Eclipse
+
+- Instalación de Eclipse
+- scargar de www.eclipse.org
+- Versión Neon 3
+- Descomprimir
+- Ejecutar
+- Seleccionar el Workspace: almacenes de proyectos de eclipse
+- Nota: las versiones posteriores vienen con instalador típico
+
+#### Importación de un proyecto
+
+Forma 1:
+- Menú File / Import
+- General / Existing Projects into Workspace
+- Seleccionar la carpeta de trabajo y marcar el proyecto.
+Finish
+Forma 2:
+- Menú File / Open Projects from File System
+- Import Source (Buscar directorio)
+- Finish
+
+
+#### Ventana principal de trabajo Eclipse
+- Package Explorer: zona de proyectos, para navegar por el workspace.
+- Zona de edición: escribir el código de los programas. Textos resaltados para identificar la sintaxis y palabras reservadas. Errores subrayados en rojo y se ofrecen soluciones. Propuestas de plantilla para simplificar la escritura
+- Outline: esquema de la clase en edición. Métodos y atributos.
+- Consola Java: resultado de la ejecución de los programas, salida por consola, errores ejecución
+
+#### Window y Perspectivas
+- La ventana principal es un mosaico de ventanitas o  **views**.
+- La visualización de la ventana principal se puede cambiar desde el menú window.
+- Se pueden activar otras vistas en Window / Show View.
+- Las perspectivas:
+    - Son un montaje de vistas determinado.
+    - Existen perspectivas predefinidas.
+
 
 ## Configuración y actualización
 
