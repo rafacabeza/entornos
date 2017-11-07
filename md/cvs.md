@@ -25,6 +25,7 @@ de modo que puedas recuperar versiones específicas más adelante._
 - En algún momento deben sincronizarse los clientes y el servidor o serviodres.
 
 
+
 ## Git
 - Linux usaba BitKeeper para su desarrollo pero en 2005 dejó de ofrecer una licencia gratis para el proyecto GNU/Linux.
 - Git se creó para sustituir a BitKeeper
