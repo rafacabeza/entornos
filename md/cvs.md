@@ -69,6 +69,7 @@ de modo que puedas recuperar versiones específicas más adelante._
   git config --global core.editor vi
   ```
 
+
 ## Niveles de configuración de git
 
 Todo lo aquí contado puede verse con más detalle en el citado manual.
@@ -81,6 +82,7 @@ Todo lo aquí contado puede verse con más detalle en el citado manual.
 
   * Para un repositorio: _.git/config_
 
+
 * Para ver los parámetros configurados:
 
 ```
@@ -89,23 +91,33 @@ git config --list
 
 * Viene bien tener una [chuleta de comandos de Git](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 
-### Configuración de GitHub \(o Bitbucket\)
 
-* Nos registramos en [Github](https://github.com/)
 
+### GitHub \(o Bitbucket\)
+- Git puede usarse localmente y sin conectarse a ningún otro equipo.
+- No obstante el uso de un servidor remoto:
+    - Facilita la compartición de código
+    - Facilita el trabajo en equipo
+    - Aumenta la seguridad de nuestro código.
+
+
+### Uso de GitHub o Bitbucket
+* Nos registramos en [Github](https://github.com/) o [Bitbucket](https://bitbucket.org)
+* La comunicación entre un repositorio local y uno remoto puede ser mediante https o ssh.
+* Por cuestiones prácticas consideramos mejor usar ssh. Veamos que configuración requiere.
+
+
+#### Configuración de ssh
+* Evitaremos introducir usuario/contraseña en nuestra consola
 * Accedemos a nuestra cuenta
-
-* Vamos a los settings y asociamos una ssh-key
-
-  * Evitaremos introducir usuario/contraseña en cada _git push_
-
+* Vamos a los settings del __USUARIO__ y asociamos una ssh-key
 * Como creamos nuestra ssh-key:
 
 ```
 ssh-keygen
 ```
 
-* Copiaremos el contenido de _~/.ssh/id\_rsa.pub_ a una nueva clave ssh en GitHub
+* Copiaremos el contenido de  `~/.ssh/id\_rsa.pub`  a una nueva clave ssh en GitHub
 
 
 
