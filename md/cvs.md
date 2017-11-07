@@ -40,3 +40,71 @@ de modo que puedas recuperar versiones específicas más adelante._
 * Asegura la integridad. Realiza un hash SHA-1 a cada fichero. Si un fichero es alterado git lo detecta.
 
 
+## Instalación
+* Vamos a usar Ubuntu o alguna de sus variantes (Mint, Lubuntu, ...)
+* Instalación de git:
+
+  ```
+  sudo apt-get update
+
+  sudo apt-get install git
+  ``` 
+* En Windows, descargamos desde [aquí](https://git-scm.com/download/win) y ejecutamos.
+
+
+## Configuración inicial
+
+* Configuración necesaria para cada commit que haga:
+
+  ```
+  git config --global user.name "Your Name"
+
+  git config --global user.email "youremail@domain.com"
+  ```
+
+* Opcionalmente el editor \(si no me gusta el que hay por defecto\):
+
+  ```
+  git config --global core.editor vi
+  ```
+
+## Niveles de configuración de git
+
+Todo lo aquí contado puede verse con más detalle en el citado manual.
+
+* Git tiene 3 niveles de configuración, cada nivel sobreescribe el anterior:
+
+  * Para todos los usuarios: _/etc/gitconfig_
+
+  * Para un usuario: _~/.gitconfig_ \(opción --global\)
+
+  * Para un repositorio: _.git/config_
+
+* Para ver los parámetros configurados:
+
+```
+git config --list
+```
+
+* Viene bien tener una [chuleta de comandos de Git](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+
+### Configuración de GitHub \(o Bitbucket\)
+
+* Nos registramos en [Github](https://github.com/)
+
+* Accedemos a nuestra cuenta
+
+* Vamos a los settings y asociamos una ssh-key
+
+  * Evitaremos introducir usuario/contraseña en cada _git push_
+
+* Como creamos nuestra ssh-key:
+
+```
+ssh-keygen
+```
+
+* Copiaremos el contenido de _~/.ssh/id\_rsa.pub_ a una nueva clave ssh en GitHub
+
+
+
