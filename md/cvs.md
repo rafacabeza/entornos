@@ -121,3 +121,155 @@ ssh-keygen
 
 
 
+# Uso de GIT: Iniciar el repositorio
+
+
+## Para empezar.
+
+- Podemos iniciar el repositorio en GitHub o Bitbucket
+- Podemos iniciarlo localmente.
+- Supongamos que hemos iniciado nuestro proyecto y tomamos la segunda opción.
+
+
+## Objetivo
+- Tomar una carpeta como nuestro repositorio.
+- Puede ser la carpeta de ejercicicios de programación.
+- Puede ser la carpeta de un proyecto concreto.
+
+
+### ¿Qué hago localmente?
+- Voy a git bash y me muevo a mi directorio
+- Tecleo lo siguiente:
+	- git init
+	- echo "# Repositorio de ejemplo" >> README.md
+	- git add README.md
+	- git commit -m "Commit inicial"
+	
+### ¿Qué hago en GitHub/Bitbucket?
+
+- Creo repositorio
+- Sigo las instrucciones para subir mi repositorio local:
+
+
+## Opción B. Iniciar el repositorio en GitHub/Bitbucket
+
+- Al crear el repositorio se da la posibilidad de añadir un fichero README.md y crear un commit inicial.
+- Por otra parte podemos partir de un repositorio nuestro o ajeno ya creado.
+- En tal caso basta con hacer:
+
+    ```
+    git clone <url repo>           #habitual
+    git clone <url repo> <carpeta> #permite definir destino
+    ```
+
+
+
+## Uso de git: guardar cambios
+### Ver el estado
+- Consultar el estado del repositorio: `git status`
+- Nos dirá qué ficheros hay nuevos o modificados
+- La rama que estamos, por defecto master
+- Si estamos por detrás/delante del _origin_, el repositorio remoto
+
+![git status](img/git1.png "Logo Title Text 1")
+
+
+### Preparar y comprometer cambios:
+
+- Con `git add ...` pasamos los ficheros modificados/nuevos a preparados.
+- Tras hacer esto se guarda temporalmente los cambios realizados.
+- Con `git commit -m "...." comprometemos los cambios.
+
+```
+git add .
+git commit -m "comentario explicativo"
+```
+
+![git status](img/git2.png "Ejemplo de commit")
+
+
+#### Ejemplos de  `git add`
+
+```
+git add <nombre fichero>    #un sólo fichero
+git add img/logo.jpg
+git add <nombre directorio> #todo lo de un directorio
+git add .                   #caso particular, todo, todo...
+git add public/js
+```
+
+
+#### Recorrido completo:
+
+
+![git status](img/git03.png)
+![git status](img/git04.png)
+
+
+![git status](img/git05.png)
+![git status](img/git06.png)
+
+
+#### Marcha atrás de un fichero modificado
+
+- Hemos modificado un fichero y queremos recuperar la anterior versión:
+
+![git status](img/git03.png)
+```
+git checkout <nombrefichero>
+git checkout casa.md
+git checkout <nombre directorio>
+git checkout .
+```
+
+
+#### Marcha atrás de un fichero preparado
+
+- Queremos sacar del estado preparado después de `git add`:
+
+![git status](img/git04.png)
+```
+git reset HEAD <nombrefichero>
+git reset HEAD casa.md
+git reset HEAD <nombre directorio>
+git reset HEAD .
+```
+
+
+
+### Guardar en remoto.
+- En local por defecto trabajamos en la rama master.
+- Si hay un remoto, además se guarda oculta la rama origin/master.
+- Sean los equipos A y B, y mismo repositorio:
+
+![](img/gitremote01.png)
+
+
+#### Commit + push, equipo A
+
+![](img/gitremote02.png)
+![](img/gitremote03.png)
+
+
+#### Fetch + pull, equipo B
+- Se recomienda hacer git status entre ambos.
+- En realidad pull es la suma de dos comandos: fetch + merge
+
+![](img/gitremote04.png)
+![](img/gitremote05.png)
+
+
+### ¿Cómo usar dos equipos: aula y casa?
+
+- Al empezar a trabajar, ejecutar
+```
+git fetch
+git status
+git pull
+```
+- Al acabar la sesión de trabajo
+```
+git commit 
+git status
+git push
+```
