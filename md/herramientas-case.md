@@ -99,6 +99,17 @@ Forma 2:
 - No son parches ni actualizaciones.
 
 
+#### Instalación Plugin WindowBuilder
+
+- Se trata de una interfaz gráfica de usuario (GUI) para crear aplicaciones con ventanas.
+- Esta funcionalidad no existe en eclipse.
+- Plugin desarrollado por Google.
+- Permite desarrollar de forma rápida y cómoda la GUI de aplicaciones Java.
+- Necesario saber la versión de Eclipse instalada: Eclipse/Ayuda -> Acerca de Eclipse
+- Descargar el plugin de: http://download.eclipse.org/windowbuilder/WB/release/4.6/
+- Help -> Install new software
+
+
 #### Creación de nuevo proyecto con GUI
 - File / New / Java Project
 - Escribir nombre de proyecto
