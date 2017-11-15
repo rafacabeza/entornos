@@ -141,7 +141,16 @@ la rama master.
 dejar el proyecto en versiones incompletas o inestables.
 
 
+### Comandos con ramas
 ```
-git branch      // lista de ramas
-git branch      // 
+git branch              // lista de ramas
+git branch  <rama>      // crear rama
+git checkout <rama>     // cambiar de rama
+git checkout -b <rama>  // crear y cambiar rama 2 en 1
+git branch -d <rama>    // borrar rama
+```
+### Fundir ramas
+```
+git checkout master     // nos ponemos en rama master
+git merge <rama>        //fundimos con la rama deseada
 ```
