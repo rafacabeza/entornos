@@ -1,4 +1,12 @@
 ## Uso de git: guardar cambios
+Todas estas operaciones son locales:
+- No es necesario salir a la red
+- Velocidad muy alta de las operaciones
+- Lee de tu base de datos local
+- Calcula diferencias entre ficheros en local
+- No limita el trabajo sin conexión
+
+
 ### Ver el estado
 - Consultar el estado del repositorio: `git status`
 - Nos dirá qué ficheros hay nuevos o modificados
@@ -85,6 +93,20 @@ git reset HEAD .
 ![](img/gitremote03.png)
 
 
+#### Git push
+- Push es el comando usado para subir código a _origin_, es decir
+el repositorio remoto.
+- Origin es el nombre usado por defecto para la copia remota.
+- Ejemplos de uso
+
+```
+git push                        # sube rama "preferida"
+
+# comando usado en la subida inicial tras git init. Lo explicaremos
+git push -u origin master       
+```
+
+
 #### Fetch + pull, equipo B
 - Se recomienda hacer git status entre ambos.
 - En realidad pull es la suma de dos comandos: fetch + merge
@@ -136,7 +158,7 @@ commit
 - Las ramas se usan fundamentalmente para separar tareas sin
 modificar la rama `master`
 - Una vez terminada la tarea se funde (merge) la rama de tarea 
-la rama master.
+con la rama master.
 - Esto permite cambiar de rama/tarea y dejarla incompleta sin
 dejar el proyecto en versiones incompletas o inestables.
 
@@ -154,3 +176,58 @@ git branch -d <rama>    // borrar rama
 git checkout master     // nos ponemos en rama master
 git merge <rama>        //fundimos con la rama deseada
 ```
+
+
+### Revisemos el uso de push 
+- Push sube código a un repositorio remoto
+- Origin es el alias usado pra el repositorio remoto
+- Podríamos usar más de un remoto
+- Master es el nombre de la rama por defecto
+```
+git push                        # sube rama "preferida"
+git push <repo remoto> <rama>   # sube una rama concreta
+git push origin dev             # Ej. sube rama dev
+git push -u <repo remoto> <rama># sube y predetermina rama
+git push -u origin master       # Ej. sube y pred. master
+```
+
+
+### Ramas remotas
+- Si queremos compartir una rama de trabajo
+- Subir una rama:
+```
+git push origin <rama>
+```
+- Bajar la rama tiene dos partes:
+```
+git fetch  #crea la rama oculta origin/<rama>
+```
+- Las siguientes ordenes son idénticas.
+- Ambas crear la rama local <rama> asociada a origin/<rama> 
+- La primera nos permite alterar el nombre <rama>.
+```
+git checkout -b <rama> origin/<rama>
+git checkout --track origin/<rama>
+```
+
+
+
+## Revisando código
+- Los comandos básicos son log y diff
+- `git log` nos muestra información histórica
+- `git diff` compara el contenido de los ficheros
+
+
+### log
+- Log soporta una gran cantidad de parámetros:
+- Veámoslo con ejemplos:
+```
+git log             #uso base
+git log -<n>        #log de los últimos n commits
+git log 
+```
+
+
+
+## GitIgnorando cosas: .gitignore
+

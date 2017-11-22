@@ -39,4 +39,12 @@ de modo que puedas recuperar versiones específicas más adelante._
 * Permite grandes proyectos con mulititud de ramas
 * Usa copias completas. Hace copia de los ficheros modificados y enlaces a los no modificados.
 * Asegura la integridad. Realiza un hash SHA-1 a cada fichero. Si un fichero es alterado git lo detecta.
+* La mayoría de cambios se hacen localmente.
 
+
+### Esquema de almacenamiento
+
+- Cada instantánea se identifica por un _hash_ SHA1
+- Cada instantánea o _commit_ añade los ficheros modificados. Y guarda enlaces al resto.
+
+![](img/gitHistory.png)

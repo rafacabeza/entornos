@@ -78,9 +78,7 @@ ssh-keygen
 
 
 
-# Uso de GIT: Iniciar el repositorio
-
-
+# Iniciar repositorio
 ## Para empezar.
 
 - Podemos iniciar el repositorio en GitHub o Bitbucket
