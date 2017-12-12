@@ -49,6 +49,7 @@
 
 ### Comentarios JavaDoc
 
+- JavaDoc permite crear un conjunto de páginas web a partir del código
 - Primera parte descriptiva. Permite HTML
 - Segunda parte tags JavaDoc:
     - @etiqueta descripción
@@ -68,4 +69,25 @@
 | @see      |   referencia a otras clases y métodos  |  - |
 ------------------------------------------------------
 
+
+### Documentar métodos y constructores
+
+
+<table>
+<tr><td>@param<td>nombre del parámetro
+	<td>descripción de su significado y uso
+<tr><td>@return<td>&nbsp;
+	<td>descripción de lo que se devuelve
+<tr><td>@exception<td>nombre de la excepción
+	<td>excepciones que pueden lanzarse
+<tr><td>@throws<td>nombre de la excepción
+	<td>excepciones que pueden lanzarse
     
+<tr><td>@since<td colspan=2>
+	indica desde qué versión o fecha existe
+	este constructor o método en la clase
+<tr><td>@deprecated<td colspan=2>
+	este método no debería usarse
+	pues puede desaparecer en próximas versiones
+
+</table>
