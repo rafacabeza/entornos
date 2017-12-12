@@ -48,3 +48,4 @@ de modo que puedas recuperar versiones específicas más adelante._
 - Cada instantánea o _commit_ añade los ficheros modificados. Y guarda enlaces al resto.
 
 ![](img/gitHistory.png)
+

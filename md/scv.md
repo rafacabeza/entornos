@@ -39,6 +39,16 @@ de modo que puedas recuperar versiones específicas más adelante._
 * Permite grandes proyectos con mulititud de ramas
 * Usa copias completas. Hace copia de los ficheros modificados y enlaces a los no modificados.
 * Asegura la integridad. Realiza un hash SHA-1 a cada fichero. Si un fichero es alterado git lo detecta.
+* La mayoría de cambios se hacen localmente.
+
+
+### Esquema de almacenamiento
+
+- Cada instantánea se identifica por un _hash_ SHA1
+- Cada instantánea o _commit_ añade los ficheros modificados. Y guarda enlaces al resto.
+
+![](img/gitHistory.png)
+
 
 
 ## Instalación
@@ -121,9 +131,7 @@ ssh-keygen
 
 
 
-# Uso de GIT: Iniciar el repositorio
-
-
+# Iniciar repositorio
 ## Para empezar.
 
 - Podemos iniciar el repositorio en GitHub o Bitbucket
@@ -165,6 +173,14 @@ ssh-keygen
 
 
 ## Uso de git: guardar cambios
+Todas estas operaciones son locales:
+- No es necesario salir a la red
+- Velocidad muy alta de las operaciones
+- Lee de tu base de datos local
+- Calcula diferencias entre ficheros en local
+- No limita el trabajo sin conexión
+
+
 ### Ver el estado
 - Consultar el estado del repositorio: `git status`
 - Nos dirá qué ficheros hay nuevos o modificados
@@ -251,6 +267,20 @@ git reset HEAD .
 ![](img/gitremote03.png)
 
 
+#### Git push
+- Push es el comando usado para subir código a _origin_, es decir
+el repositorio remoto.
+- Origin es el nombre usado por defecto para la copia remota.
+- Ejemplos de uso
+
+```
+git push                        # sube rama "preferida"
+
+# comando usado en la subida inicial tras git init. Lo explicaremos
+git push -u origin master       
+```
+
+
 #### Fetch + pull, equipo B
 - Se recomienda hacer git status entre ambos.
 - En realidad pull es la suma de dos comandos: fetch + merge
@@ -273,3 +303,108 @@ git commit
 git status
 git push
 ```
+
+
+### Fork & Pull Request
+#### Fork
+- Clon de un repositorio ajeno en nuestro espacio
+- Es una funcionalidad de GitHub/Bitbucket
+- P.ej. el repositorio repo1702
+- El clon es de mi propiedad y lo puedo clonar 
+y editar
+#### Pull Request
+- Es una solicitud de que el dueño original 
+incorpore mis cambios.
+- Se hace en la interfaz web
+- El dueño original lo acepta o no...
+
+
+### Commit --amend
+- Consiste en rectificar el commit anterior
+- Los cambios añadidos sobreescriben el último
+commit
+- OJO! Puede ser peligroso.
+
+
+
+## Ramas (branch)
+- Por defecto trabajamos en la rama `master`
+- Las ramas se usan fundamentalmente para separar tareas sin
+modificar la rama `master`
+- Una vez terminada la tarea se funde (merge) la rama de tarea 
+con la rama master.
+- Esto permite cambiar de rama/tarea y dejarla incompleta sin
+dejar el proyecto en versiones incompletas o inestables.
+
+
+### Comandos con ramas
+```
+git branch              // lista de ramas
+git branch  <rama>      // crear rama
+git checkout <rama>     // cambiar de rama
+git checkout -b <rama>  // crear y cambiar rama 2 en 1
+git branch -d <rama>    // borrar rama
+```
+### Fundir ramas
+```
+git checkout master     // nos ponemos en rama master
+git merge <rama>        //fundimos con la rama deseada
+```
+
+
+### Revisemos el uso de push 
+- Push sube código a un repositorio remoto
+- Origin es el alias usado pra el repositorio remoto
+- Podríamos usar más de un remoto
+- Master es el nombre de la rama por defecto
+```
+git push                        # sube rama "preferida"
+git push <repo remoto> <rama>   # sube una rama concreta
+git push origin dev             # Ej. sube rama dev
+git push -u <repo remoto> <rama># sube y predetermina rama
+git push -u origin master       # Ej. sube y pred. master
+```
+
+
+### Ramas remotas
+- Si queremos compartir una rama de trabajo
+- Subir una rama:
+```
+git push origin <rama>
+```
+- Bajar la rama tiene dos partes:
+```
+git fetch  #crea la rama oculta origin/<rama>
+```
+- Las siguientes ordenes son idénticas.
+- Ambas crear la rama local <rama> asociada a origin/<rama> 
+- La primera nos permite alterar el nombre <rama>.
+```
+git checkout -b <rama> origin/<rama>
+git checkout --track origin/<rama>
+```
+
+
+
+## Revisando código
+- Los comandos básicos son log y diff
+- `git log` nos muestra información histórica
+- `git diff` compara el contenido de los ficheros
+
+
+### log
+- Log soporta una gran cantidad de parámetros:
+- Veámoslo con ejemplos:
+```
+git log             #uso base
+git log -<n>        #log de los últimos n commits
+git log 
+```
+
+
+
+## GitIgnorando cosas: .gitignore
+
+- Podemos decir a git que no tenga en consideración algunos ficheros/directorios
+- Para hacerlo debemos crear un fichero `.gitignore` en el directorio raiz
+- Para ver algunos ejemplos puedes visitar https://www.atlassian.com/git/tutorials/gitignore
