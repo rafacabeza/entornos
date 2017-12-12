@@ -54,20 +54,16 @@ Writing Robust Java Code
 - Segunda parte tags JavaDoc:
     - @etiqueta descripción
     - El juego de etiquetas está normalizado
-    - @author, @version, @see, @param, @return, @throws, @deprecated, @since
+    - @author, @version, @see, @param, @return, @throws, @deprecated, @since, ...
 
 
 ### Documentar clases e interfaces
  
-------------------------------------------------------
-| Etiqueta   |   Descripción                         |  Obligatoria |
-------------------------------------------------------
-| @author   |   nombre del autor                     |  Si |
-------------------------------------------------------
-| @version	|   identificación de la versión y fecha |  Si |
-------------------------------------------------------
-| @see      |   referencia a otras clases y métodos  |  - |
-------------------------------------------------------
+Etiqueta  | Descripción                          |  Obligatoria 
+--------- | ------------------------------------ | --
+@author   | nombre del autor                     |  Si 
+@version  | identificación de la versión y fecha |  Si 
+@see      | referencia a otras clases y métodos  |  - 
 
 
 ### Documentar métodos y constructores
@@ -83,11 +79,14 @@ Writing Robust Java Code
 <tr><td>@throws<td>nombre de la excepción
 	<td>excepciones que pueden lanzarse
     
+<!--
 <tr><td>@since<td colspan=2>
 	indica desde qué versión o fecha existe
 	este constructor o método en la clase
 <tr><td>@deprecated<td colspan=2>
 	este método no debería usarse
 	pues puede desaparecer en próximas versiones
+
+-->
 
 </table>
