@@ -33,10 +33,15 @@ Coding Style and Good Computing Practices
 R. Caron. 2000
 Coding Techniques and Programming Practices 
 
+
 > Write the documentation before you write the code.
     
 S.W. Ambler. 2000.
 Writing Robust Java Code 
+
+> You know you're brilliant, but maybe you'd like to understand what you did two weeks from now
+
+Linus Torvalds. 1995
 
 
 ### Comentarios
