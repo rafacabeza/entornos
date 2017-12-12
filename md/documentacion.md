@@ -23,20 +23,20 @@
 
 ### Citas
 
-    > If your program isn't worth documenting, it probably isn't worth running
+> If your program isn't worth documenting, it probably isn't worth running
     
-    J. Nagler. 1995
-    Coding Style and Good Computing Practices 
+J. Nagler. 1995
+Coding Style and Good Computing Practices 
 
-    > Do not document bad code - rewrite it
+> Do not document bad code - rewrite it
     
-    R. Caron. 2000
-    Coding Techniques and Programming Practices 
+R. Caron. 2000
+Coding Techniques and Programming Practices 
 
-    > Write the documentation before you write the code.
+> Write the documentation before you write the code.
     
-    S.W. Ambler. 2000.
-    Writing Robust Java Code 
+S.W. Ambler. 2000.
+Writing Robust Java Code 
 
 
 ### Comentarios
