@@ -12,5 +12,5 @@
 
 ## Tema 3
 
-* [Herramientas CASE](md/scv.md)
+* [Control de versiones](md/scv.md)
 * [Documentación](md/socumentacion.md)
