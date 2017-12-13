@@ -60,7 +60,9 @@ Linus Torvalds. 1995
     - @etiqueta descripción
     - El juego de etiquetas está normalizado
     - @author, @version, @see, @param, @return, @throws, @deprecated, @since, ...
-
+- Siempre antes del elemento comentado
+- [Documento sobre JavaDoc](http://laboratorio.is.escuelaing.edu.co/labinfo/doc/javadoc.pdf)
+- [Documentación](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/toc.html)
 
 ### Documentar clases e interfaces
  
@@ -71,18 +73,14 @@ Etiqueta  | Descripción                          |  Obligatoria
 @see      | referencia a otras clases y métodos  |  - 
 
 
-### Documentar métodos y constructores
+### Documentar métodos y constructores (obligatorio)
 
-
-<table>
-<tr><td>@param<td>nombre del parámetro
-	<td>descripción de su significado y uso
-<tr><td>@return<td>&nbsp;
-	<td>descripción de lo que se devuelve
-<tr><td>@exception<td>nombre de la excepción
-	<td>excepciones que pueden lanzarse
-<tr><td>@throws<td>nombre de la excepción
-	<td>excepciones que pueden lanzarse
+Etiqueta   | Descripción                          |  Obligatoria 
+---------- | ------------------------------------ | --
+@param     | descripción de su significado y uso  |  Si
+@return    | descripción de lo que se devuelve    |  Si
+@exception | excepciones que pueden lanzarse      |  Si
+@throws    |  sinónio exception | -
     
 <!--
 <tr><td>@since<td colspan=2>
@@ -94,4 +92,3 @@ Etiqueta  | Descripción                          |  Obligatoria
 
 -->
 
-</table>
