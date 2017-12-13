@@ -28,27 +28,27 @@
 J. Nagler. 1995
 Coding Style and Good Computing Practices 
 
-> Do not document bad code - rewrite it
-    
-R. Caron. 2000
-Coding Techniques and Programming Practices 
+> You know you're brilliant, but maybe you'd like to understand what you did two weeks from now
 
+Linus Torvalds. 1995
 
 > Write the documentation before you write the code.
     
 S.W. Ambler. 2000.
 Writing Robust Java Code 
 
-> You know you're brilliant, but maybe you'd like to understand what you did two weeks from now
 
-Linus Torvalds. 1995
+> Do not document bad code - rewrite it
+    
+R. Caron. 2000
+Coding Techniques and Programming Practices 
 
 
 ### Comentarios
 
-- Código autodocumentado
+- Código autodocumentado: el mejor comentario
 - De una línea: `// comentario de una línea`
-- Multilínea `/* comentario multilínea*`
+- De bloque o multilínea `/* comentario de bloque*`
 - Comentarios de JavaDoc `/** comentario multilínea JavaDoc *`
 
 
