@@ -14,3 +14,7 @@
 
 * [Control de versiones](md/scv.md)
 * [Documentación](md/documentacion.md)
+
+## Tema 6
+
+* [Pruebas](md/pruebas.md)

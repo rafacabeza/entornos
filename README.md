@@ -8,7 +8,7 @@
 * Documentación y optimización
 * Diagramas de clases
 * Diagramas de comportamiento
-* Pruebas
+* [Pruebas](pruebas.md)
 * Desarrollo del software
 * Ciclo de vida
 * Proyecto
