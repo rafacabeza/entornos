@@ -1,14 +1,17 @@
 # Entornos de desarrollo
 
-* [Introduction](README.md)
-* [Presentación](presentacion.md)
-* [Desarrollo de Software](desarrollo-de-software.md)
-* [Entornos de Desarrollo](herramientas-case.md)
-* [Control de Versiones](scv.md)
-* Documentación y optimización
+
+[Vista de diapositivas](https://rafacabeza.github.io/entornos/)
+
+
+* Introduction
+* [Desarrollo de Software](https://github.com/rafacabeza/entornos/blob/master/md/desarrollo-de-software.md)
+* [Entornos de Desarrollo](https://github.com/rafacabeza/entornos/blob/master/md/herramientas-case.md)
+* [Control de Versiones.](https://github.com/rafacabeza/entornos/blob/master/md/scv.md)
+* [Documentación y optimización](https://github.com/rafacabeza/entornos/blob/master/md/documentacion.md)
 * Diagramas de clases
 * Diagramas de comportamiento
-* [Pruebas](pruebas.md)
+* [Pruebas](https://github.com/rafacabeza/entornos/blob/master/md/pruebas.md)
 * Desarrollo del software
 * Ciclo de vida
 * Proyecto
