@@ -2,6 +2,7 @@
 
 
 [Vista de diapositivas](https://rafacabeza.github.io/entornos/)
+
 [Vista de apuntes](https://rafacabeza1.gitbooks.io/entornos/content/)
 
 
