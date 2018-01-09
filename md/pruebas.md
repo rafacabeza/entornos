@@ -74,8 +74,60 @@ Mediante esta técnica se pueden obtener casos que:
  - Prueba del sistema: verifica que cada elemento encaja de forma adecuada y se alcanza la funcionalidad y rendimiento total. 
 
 
+![](img/espiralPruebas.jpg)
 
-## Pruebas de código
+![](img/modeloV.png)
+
+
+### Prueba unitaria
+ - Se trata de probar cada módulo para eliminar errores en la interfaz y en la lógica interna.
+ - Utiliza técnicas de caja blanca y caja negra.
+ - Se realizan pruebas sobre:
+    - La interfaz del módulo, para asegurar el flujo correcto.
+    - Las estructuras de datos locales, para asegurar que mantienen la integridad.
+    - Las condiciones límite.
+    - Todos los caminos independientes, para asegurar que todas sentencias se ejecutan al menos una vez.
+    - Todos los caminos de manejo de errores.
+
+
+### Pruebas de integración
+Se observa cómo interaccionan los distintos módulos. 
+Dos enfoques para estas pruebas:
+ - Integración no incremental o big bang: Se combinan todos módulos a la vez y se prueba el programa completo. Generalmente se encuentran muchos errores y la corrección es difícil.
+ - Integración incremental: El programa completo se va construyendo y probando en pequeños segmentos, así es más fácil localizar los errores. Puede ser de dos tipos:
+    - Ascendente: la construcción y prueba empieza desde los niveles más bajos de la estructura del programa.
+    - Descendente: la integración comienza en el módulo principal.
+
+
+### Pruebas de validación
+La validación se consigue cuando el software funciona de acuerdo con las 
+expectativas y requisitos. 
+- Se llevan a cabo una serie de pruebas de caja negra:
+    - Prueba Alfa: por el usuario o cliente en el lugar de desarrollo. 
+    El cliente usa el software y el desarrollador mira, apuntando los errores 
+    y problemas de uso.
+    - Pruebas Beta: por los usuarios finales en su lugar de trabajo. 
+    Sin el desarrollador delante. El usuario registra los problemas 
+    que encuentra (reales o imaginarios) e informa al desarrollador para 
+    que lo modifique y arregle.
+
+
+### Pruebas del sistema	
+Es un conjunto de pruebas para ejercitar el software:
+- Prueba de recuperación: se fuerza el fallo y se verifica que la recuperación 
+se lleva a cabo apropiadamente.
+- Prueba de seguridad: intenta verificar que el sistema está protegido contra 
+accesos ilegales.
+- Prueba de resistencia (stress): trata de enfrentar al sistema con situaciones que exigen gran cantidad de recursos (máximo de memoria, gran frecuencia de datos de entrada, problemas en un sistema operativo virtual…)
+
+
+
+## Pruebas unitarias o de código
+- Consiste en ejecutar el código con el objetivo de encontrar errores.
+- Se parte de un conjunto de entradas y una serie de condiciones de ejecución.
+- Se observan y registran los resultados y se comparan con los esperados.
+- Se observará si el comportamiento del programa es el previsto o no y por qué.
+- A continuación vemos algunas técnicas:
 
 
 ### Particiones equivalentes
