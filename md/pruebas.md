@@ -7,22 +7,47 @@
 Su finalidad es:
 
 - Verificar: el sofware hace lo que queremos que haga
-- Validar: el software hace lo que el cliente espera
+- Validar: el software hace lo que el cliente espera7
+- Todo antes de ponerlo en producción
+- Son parte del ciclo de vida
+- La tendencia es integrarlas en la fase de desarrollo
 
 
 ### Fases:
  - Planificación
  - Diseño y construcción de los casos de pruebas
- - Ejecución
+ - Definición de los procedimientos
+ - Ejecución de las pruebas
  - Registro de los resultados y análisis
- - Deuración
- - Informe de errores
+ - Depuración de los errores
+ - Informe de resultados
 
 
+### Caso de prueba
+Conjunto de entradas, condiciones de ejecución y resultados 
+esperados para un objetivo particular o condición de prueba.
+ - Hay que definir las condiciones (pre- y post-)
+ - Hay que definir los valores de entrada
+ - Hay que definir el comportamiento esperado
+ - Analizar: pasa o no pasa la prueba
+
+ 
 ## Técnicas
 
 - Caja Negra o funcionales: Analizar la funcionalidad sin conocer el codigo.
 - Caja Blanca o estructurales: Analizar la estructura del codigo y ponerala a prueba.
+![](img/cajaNegraBlanca.jpg)
+
+
+## Pruebas de caja  blanca
+Se basan en examinar minuciosamente los detalles procedimentales del código de la aplicación.
+
+Mediante esta técnica se pueden obtener casos que:
+ - Garanticen que se ejecutan al menos una vez todos los caminos independientes de cada módulo.
+ - Ejecuten todas las sentencias al menos una vez.
+ - Ejecuten todas las decisiones lógicas en su parte verdadera y en su parte falsa.
+ - Ejecuten todos los bucles en sus límites.
+ - Utilicen todas las estructuras de datos internas para asegurar su validez.
 
 
 ## Pruebas de caja negra
