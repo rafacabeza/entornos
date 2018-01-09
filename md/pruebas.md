@@ -31,7 +31,7 @@ esperados para un objetivo particular o condición de prueba.
  - Hay que definir el comportamiento esperado
  - Analizar: pasa o no pasa la prueba
 
- 
+
 ## Técnicas
 
 - Caja Negra o funcionales: Analizar la funcionalidad sin conocer el codigo.
@@ -41,7 +41,6 @@ esperados para un objetivo particular o condición de prueba.
 
 ## Pruebas de caja  blanca
 Se basan en examinar minuciosamente los detalles procedimentales del código de la aplicación.
-
 Mediante esta técnica se pueden obtener casos que:
  - Garanticen que se ejecutan al menos una vez todos los caminos independientes de cada módulo.
  - Ejecuten todas las sentencias al menos una vez.
@@ -54,7 +53,22 @@ Mediante esta técnica se pueden obtener casos que:
 
 - Comprueban que el codigo hace lo esperado
 - El resultado obtenido es el correspondiente a los datos aportados.
-- No nos preocupamos de la estructura del sofware
+- No nos preocupamos de la estructura del software ni como funciona.
+- Los casos de uso buscan demostrar que las salidas son las esperadas.
+
+
+### Errores obtenidos en pruebas de caja negra
+ - Funcionalidades incorrectas/ausentes
+ - Errores de interfaz
+ - Errores de estructura de datos o acceso a BBDD
+ - Errores de rendimiento
+ - Errores de inicialización/finalización.
+
+
+
+
+
+
 
 
 ### Particiones equivalentes
