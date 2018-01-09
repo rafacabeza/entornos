@@ -32,6 +32,7 @@ esperados para un objetivo particular o condición de prueba.
  - Analizar: pasa o no pasa la prueba
 
 
+
 ## Técnicas
 
 - Caja Negra o funcionales: Analizar la funcionalidad sin conocer el codigo.
@@ -39,7 +40,7 @@ esperados para un objetivo particular o condición de prueba.
 ![](img/cajaNegraBlanca.jpg)
 
 
-## Pruebas de caja  blanca
+### Pruebas de caja  blanca
 Se basan en examinar minuciosamente los detalles procedimentales del código de la aplicación.
 Mediante esta técnica se pueden obtener casos que:
  - Garanticen que se ejecutan al menos una vez todos los caminos independientes de cada módulo.
@@ -49,7 +50,7 @@ Mediante esta técnica se pueden obtener casos que:
  - Utilicen todas las estructuras de datos internas para asegurar su validez.
 
 
-## Pruebas de caja negra
+### Pruebas de caja negra
 
 - Comprueban que el codigo hace lo esperado
 - El resultado obtenido es el correspondiente a los datos aportados.
@@ -57,7 +58,7 @@ Mediante esta técnica se pueden obtener casos que:
 - Los casos de uso buscan demostrar que las salidas son las esperadas.
 
 
-### Errores obtenidos en pruebas de caja negra
+#### Errores obtenidos en pruebas de caja negra
  - Funcionalidades incorrectas/ausentes
  - Errores de interfaz
  - Errores de estructura de datos o acceso a BBDD
@@ -66,9 +67,15 @@ Mediante esta técnica se pueden obtener casos que:
 
 
 
+## Estrategias de Pruebas de Software
+ - Pruebas de unidad: se centran en la unidad más pequeña de software, el módulo.
+ - Pruebas de integración: se construye con los módulos una estructura de programa tal como dicta el diseño. 
+ - Prueba de validación o aceptación: prueba del software en el entorno real de trabajo por el usuario final. Se validan los requisitos establecidos.
+ - Prueba del sistema: verifica que cada elemento encaja de forma adecuada y se alcanza la funcionalidad y rendimiento total. 
 
 
 
+## Pruebas de código
 
 
 ### Particiones equivalentes
