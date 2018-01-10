@@ -130,6 +130,99 @@ accesos ilegales.
 - A continuación vemos algunas técnicas:
 
 
+### Prueba del camino básico
+- Es una técnica de prueba de caja blanca que permite al diseñador de las pruebas:
+- Obtener una medida de la complejidad lógica de un diseño procedimental.
+- Usar esa medida como guía para la definición de un conjunto básico de caminos de ejecución.
+- Los casos de prueba obtenidos del conjunto básico garantizan que durante la prueba se ejecuta por lo menos una vez cada sentencia del programa.
+- Para la obtención de la medida de complejidad lógica (o ciclomática) emplearemos una representación del flujo de control denominada grafo de flujo o del programa.
+
+
+
+- Notación de grafo de flujo
+- Cada círculo representa una o más sentencias, sin bifurcaciones.
+
+![](img/grafo.png)
+
+
+#### Ejemplo de programa
+- En primer lugar necesitamos tener claro el diagrama de flujo de la aplicación. 
+- A continuación se muestra un diagrama de flujo de un programa que determina el mayor de tres valores dados:
+
+![](img/grafo2.png)
+
+
+#### Ejemplo: análisis I
+- A partir del diagrama de flujo generaremos un GRAFO DE FLUJO para determinar los círculos (nodos) y las flechas (aristas o enlaces) entre ellos.
+- Los NODOS representan una o más sentencias. Un solo nodo se puede corresponder con una secuencia de símbolos del proceso y un rombo de decisión.
+- Las ARISTAS o ENLACES representan el flujo de control. Una arista termina en un nodo. 
+- Detectamos los nodos que conformarán el grafo de flujo así como los caminos que se pueden recorrer durante la ejecución del programa:
+
+
+#### Ejemplo: análisis II
+- Si tenemos una condición compuesta, como es nuestro caso (a>b AND a>c), debemos descomponerla creando un nodo para cada una de las condiciones.
+- A continuación dibujamos el grafo de flujo
+
+![](img/grafo3.png)
+![](img/grafo4.png)
+
+
+#### Ejemplo: cálculo
+- Una vez obtenido el grafo de flujo, tenemos que calcular la complejidad ciclomática, 
+es decir, el número de caminos independientes del conjunto básico de un programa.
+- Un camino independiente es cualquier camino del programa que introduce, 
+por lo menos, un nuevo conjunto de sentencias de proceso o una condición, 
+es decir, en términos de diagrama de flujo, está constituido por lo menos 
+por una arista que no haya sido recorrida anteriormente.
+
+
+#### Complejidad ciclomática
+- La fórmula para el cálculo de la complejidad ciclomática “V(G)” es:
+
+			`V(G) = a –n + 2`
+
+- Donde:
+- a: Es el número de aristas
+- n: Es el número de 	nodos
+
+- Nuestro código tiene una complejidad ciclomática de 4, eso quiere decir 
+que debemos realizar 4 pruebas para asegurarnos de que cada instrucción se 
+ejecute por lo menos una vez.
+
+
+- Por último, una vez que conocemos la complejidad ciclomática 
+(4 en nuestro ejemplo), debemos formar los caminos independientes 
+que existen observando el grafo de flujo. Compondremos una tabla 
+empezando por el más corto de los caminos:
+
+![](img/grafo5.png)
+
+
+#### Complejidad ciclomática. Niveles
+- Se establecen los siguientes valores de referencia en función de 
+la complejidad ciclomática:
+
+![](img/grafo6.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Particiones equivalentes
 - Dividimos los valores de entrada en particiones o clases equivalentes.
 - Se debe probar el programa para un elemento de cada clase de equivalencia.
