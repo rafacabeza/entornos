@@ -135,10 +135,9 @@ accesos ilegales.
 - Obtener una medida de la complejidad lógica de un diseño procedimental.
 - Usar esa medida como guía para la definición de un conjunto básico de caminos de ejecución.
 - Los casos de prueba obtenidos del conjunto básico garantizan que durante la prueba se ejecuta por lo menos una vez cada sentencia del programa.
+
+
 - Para la obtención de la medida de complejidad lógica (o ciclomática) emplearemos una representación del flujo de control denominada grafo de flujo o del programa.
-
-
-
 - Notación de grafo de flujo
 - Cada círculo representa una o más sentencias, sin bifurcaciones.
 
@@ -203,23 +202,6 @@ empezando por el más corto de los caminos:
 la complejidad ciclomática:
 
 ![](img/grafo6.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
