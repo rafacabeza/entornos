@@ -80,21 +80,21 @@ Mediante esta técnica se pueden obtener casos que:
 
 
 ### Prueba unitaria
- - Se trata de probar cada módulo para eliminar errores en la interfaz y en la lógica interna.
+ - Se trata de probar cada módulo para eliminar errores.
  - Utiliza técnicas de caja blanca y caja negra.
  - Se realizan pruebas sobre:
     - La interfaz del módulo, para asegurar el flujo correcto.
     - Las estructuras de datos locales, para asegurar que mantienen la integridad.
     - Las condiciones límite.
-    - Todos los caminos independientes, para asegurar que todas sentencias se ejecutan al menos una vez.
+    - Todos los caminos independientes, que todas sentencias se ejecuten al menos una vez.
     - Todos los caminos de manejo de errores.
 
 
 ### Pruebas de integración
 Se observa cómo interaccionan los distintos módulos. 
 Dos enfoques para estas pruebas:
- - Integración no incremental o big bang: Se combinan todos módulos a la vez y se prueba el programa completo. Generalmente se encuentran muchos errores y la corrección es difícil.
- - Integración incremental: El programa completo se va construyendo y probando en pequeños segmentos, así es más fácil localizar los errores. Puede ser de dos tipos:
+ - Integración no incremental o big bang: Se combinan todos módulos a la vez y se prueba. Aparecen muchos errores y la corrección es difícil.
+ - Integración incremental: El programa completo se va construyendo y probando poco a poco. Más fácil localizar los errores.
     - Ascendente: la construcción y prueba empieza desde los niveles más bajos de la estructura del programa.
     - Descendente: la integración comienza en el módulo principal.
 
